@@ -72,4 +72,4 @@ Feel free to fork this repository and customize it for your own use. If you'd li
 
 ## License
 
-This project is open source and available under the MIT License. 
+This project is open source and available, so you can use this code to create your own. 

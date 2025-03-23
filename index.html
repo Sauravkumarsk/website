@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="initials">SK</h1>
+            <h1 class="name">Saurav Kumar</h1>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-short">SK</span>
+                <span class="logo-full">Saurav Kumar</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <section class="hero" id="home">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I'm a passionate developer creating amazing web experiences</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I love turning ideas into reality through code.</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>C Language</li>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Arduino Basics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://raw.githubusercontent.com/yourusername/your-repo/main/attendance-system.jpg" alt="Smart Attendance System" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'">
+                    <h3>Smart Attendance System</h3>
+                    <p>A modern attendance management system built using Arduino UNO and RFID sensor technology. This system automates the attendance process by scanning RFID cards, storing data, and providing real-time attendance tracking.</p>
+                    <div class="project-tech">
+                        <span>Arduino UNO</span>
+                        <span>RFID Sensor</span>
+                        <span>C++</span>
+                    </div>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <form id="contact-form" action="https://formsubmit.co/sauravkumar2503@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+                    <input type="hidden" name="_next" value="thanks.html">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="Thank you for your message! I'll get back to you soon.">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://github.com/Ravandevil25" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saurav-kumar-3a3094322/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 202 Saurav Kumar. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

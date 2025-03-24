@@ -10,8 +10,8 @@
 <body>
     <div class="intro">
         <div class="intro-text">
-            <h1 class="initials">SK</h1>
-            <h1 class="name">Saurav Kumar</h1>
+            <div class="initials">SAURAV KUMAR</div>
+            <div class="name"></div>
         </div>
     </div>
 
@@ -62,49 +62,90 @@
                 <div class="floating-element"></div>
             </div>
             <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>I'm a passionate developer creating amazing web experiences</p>
-                <a href="#contact" class="cta-button">Get in Touch</a>
+                <div class="profile-image-container">
+                    <img src="jk.jpg" alt="Saurav Kumar" class="profile-image">
+                    <div class="profile-overlay">
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number"></span>
+                                <span class="stat-label">Saurav Kumar</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number"></span>
+                                <span class="stat-label"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <div class="typing-text">
+                        <span class="typing-prefix"> </span>
+                        <span class="typing-words">
+                            <span>Full Stack Developer</span>
+                            <span>Problem Solver</span>
+                            <span>Tech Enthusiast</span>
+                        </span>
+                    </div>
+                    <h1>Hi, I'm <span class="highlight">Saurav Kumar</span></h1>
+                    <p>I'm a web developer passionate about creating beautiful and functional websites. I Love transforming ideas into reality through code, blending creativity with technology to build seamless digital experiences.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="cta-button primary">Get in Touch</a>
+                        <a href="#projects" class="cta-button secondary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
             </div>
         </section>
 
-        <section id="about" class="about">
+        <section id="about" class="about section-transition">
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Hello! I'm Saurav Kumar, a web developer passionate about creating beautiful and functional websites. I love transforming ideas into reality through code, blending creativity with technology to build seamless digital experiences.</p>
+                    <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I love turning ideas into reality through code.</p>
                     <div class="skills">
                         <h3>Skills</h3>
                         <ul>
-                            <li>C</li>
-                            <li>JavaScript</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Arduino Basics</li>
+                            <li><i class="fab fa-c"></i> C Language</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fas fa-microchip"></i> Arduino Basics</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects">
+        <section id="projects" class="projects section-transition">
             <h2>My Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="https://raw.githubusercontent.com/yourusername/your-repo/main/attendance-system.jpg" alt="Smart Attendance System" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'">
-                    <h3>Smart Attendance System</h3>
-                    <p>A modern attendance management system built using Arduino UNO and RFID sensor technology. This system automates the attendance process by scanning RFID cards, storing data, and providing real-time attendance tracking.</p>
-                    <div class="project-tech">
-                        <span>Arduino UNO</span>
-                        <span>RFID Sensor</span>
-                        <span>C++</span>
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/yourusername/your-repo/main/attendance-system.jpg" alt="Smart Attendance System" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="project-link">View Project</a>
+                    <div class="project-content">
+                        <h3>Smart Attendance System</h3>
+                        <p>A modern attendance management system built using Arduino UNO and RFID sensor technology. This system automates the attendance process by scanning RFID cards, storing data, and providing real-time attendance tracking.</p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-microchip"></i> Arduino UNO</span>
+                            <span><i class="fas fa-id-card"></i> RFID Sensor</span>
+                            <span><i class="fas fa-code"></i> C++</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact" class="contact section-transition">
             <h2>Get in Touch</h2>
             <div class="contact-content">
                 <form id="contact-form" action="https://formsubmit.co/sauravkumar2503@gmail.com" method="POST">
@@ -116,21 +157,32 @@
                     <div class="form-group">
                         <input type="text" id="name" name="name" required>
                         <label for="name">Your Name</label>
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="form-group">
                         <input type="email" id="email" name="email" required>
                         <label for="email">Your Email</label>
+                        <i class="fas fa-envelope"></i>
                     </div>
                     <div class="form-group">
                         <textarea id="message" name="message" required></textarea>
                         <label for="message">Your Message</label>
+                        <i class="fas fa-comment"></i>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </form>
                 <div class="social-links">
-                    <a href="https://github.com/Ravandevil25" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/saurav-kumar-3a3094322/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                
+                    <a href="https://github.com/Ravandevil25" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saurav-kumar-3a3094322/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
         </section>
